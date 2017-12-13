@@ -4,11 +4,11 @@
 
 ## Getting Started
 
-:point_right: <a href="http://hotelapp.us-east-2.elasticbeanstalk.com/index" target="_blank">hotelApp</a>
+:point_right: [hotelApp](http://hotelapp.us-east-2.elasticbeanstalk.com/index)
 
 ### How to use
 
-Try to get a quick and simple registration on our application use the link above. Login and look for hotel information, reviews and attractions in San Fraancisco Bay Area. Save a hotel by clicking the empty heart in the upper right-hand corner of the hotel detail. Like a review if it is interesting to you. Add a review for a hotel you had visited. Manage your own histories in MyPage. Finally, enjoy using my application.
+Try to get a quick and simple registration on my application by using the "hotelApp" link above. Login and look for hotel information, reviews and attractions in San Fraancisco Bay Area. Save a hotel by clicking the empty heart in the upper right-hand corner of the hotel detail. Like a review if it is interesting to you. Add a review for a hotel you had visited. Manage your own histories in MyPage. Finally, enjoy using my application.
 
 ## Development and Deployment
 
@@ -48,8 +48,7 @@ Try to get a quick and simple registration on our application use the link above
 ### References
 * [University of San Francisco](https://www.usfca.edu/)
 * [AWS](https://aws.amazon.com/)
-* [Google Place API](https://developers.google.com/places/web-service/search)
-* [Google Map API](https://developers.google.com/maps/)
+* [Google APIs](https://developers.google.com/maps/)
 * [Start Bootstrap](https://startbootstrap.com/)
 * [Expedia](https://www.expedia.com/Activities)
 * [Imgur](https://imgur.com/)

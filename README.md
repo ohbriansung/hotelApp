@@ -6,9 +6,9 @@
 
 :point_right: [hotelApp](http://hotelapp.us-east-2.elasticbeanstalk.com/index)
 
-### How to use
+### Introduction and How to use
 
-Try to get a quick and simple registration on my application by using the "hotelApp" link above. Login and look for hotel information, reviews and attractions in San Fraancisco Bay Area. Save a hotel by clicking the empty heart in the upper right-hand corner of the hotel detail. Like a review if it is interesting to you. Add a review for a hotel you had visited. Manage your own histories in MyPage. Finally, enjoy using my application.
+Try to get a quick and simple registration on my application by using the "hotelApp" link above. **Noteic that my application doesn't store your password. Instead, I hash your password with randomly produced salt before add into database.** Login and look for hotel information, reviews and attractions in San Fraancisco Bay Area. Save a hotel by clicking the empty heart in the upper right-hand corner of the hotel detail. Like a review if it is interesting to you. Add a review for a hotel you had visited. Manage your own histories in MyPage. Finally, enjoy using my application.
 
 ## Development and Deployment
 

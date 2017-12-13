@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-:point_right: [hotelApp](http://hotelapp.us-east-2.elasticbeanstalk.com/index)
+:point_right: <a href="http://hotelapp.us-east-2.elasticbeanstalk.com/index" target="_blank">hotelApp</a>
 
 ### How to use
 

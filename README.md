@@ -10,7 +10,9 @@
 
 Try to get a quick and simple registration on my application by using the "hotelApp" link above. Login and look for hotel information, reviews and attractions in San Fraancisco Bay Area. Save a hotel by clicking the empty heart in the upper right-hand corner of the hotel detail. Like a review if it is interesting to you. Add a review for a hotel you had visited. Manage your own histories in MyPage. Finally, enjoy using my application.
 
-**Notice that my application doesn't store your password directly, so you don't need to worry about me getting your personal information. Instead, I hash your password with randomly produced salt everytime before adding it into database.**
+**Notice that my application doesn't store your password directly, so you don't need to worry about me getting your personal information. Instead, I hash your password with randomly produced salt everytime before adding it into database. The user data in my database should looks like this:**
+
+![hashed password and salt](https://i.imgur.com/DcqZwXG.png)
 
 ## Development and Deployment
 

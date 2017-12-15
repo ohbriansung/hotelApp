@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Brian Sung">
+
+    <title>hotelApp</title>
+
+    <link rel="icon" href="frontend/img/icon.png" type="image/png">
+
+    <!-- Bootstrap core CSS -->
+    <link href="frontend/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="frontend/css/sweetalert.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom fonts for this template -->
+    <link href="frontend/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="frontend/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="frontend/css/creative.css" rel="stylesheet" type="text/css">
+    <link href="frontend/css/hotelApp.css" rel="stylesheet" type="text/css">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><i class="fa fa-h-square" aria-hidden="true"></i> hotelApp</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio"><i class="fa fa-camera-retro" aria-hidden="true"></i> Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about"><i class="fa fa-info-circle" aria-hidden="true"></i> About</a>
+            </li>
+            <li id="navlogin1" style="display: list-item;" class="nav-item">
+              <a class="nav-link" href="" data-toggle="modal" data-target=".bd-example-modal-sm" onclick="setType('Login')"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+            </li>
+            <li id="navlogin2" style="display: list-item;" class="nav-item">
+              <a class="nav-link" href="" data-toggle="modal" data-target=".bd-example-modal-sm" onclick="setType('Register')"><i class="fa fa-download" aria-hidden="true"></i> Register</a>
+            </li>
+    		<li id="navlogout1" style="display: none;" class="nav-item">
+              <a class="nav-link" href="/hotel"><i class="fa fa-home" aria-hidden="true"></i> Hotels</a>
+            </li>
+            <li id="navlogout2" style="display: none;" class="nav-item">
+              <a class="nav-link" href="/mypage"><i class="fa fa-user-circle-o" aria-hidden="true"></i> MyPage</a>
+            </li>
+            <li id="navlogout3" style="display: none;" class="nav-item">
+              <a class="nav-link" href="/index?logout"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead text-center text-white d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h1 class="text-uppercase">
+              <strong>Your Favorite Hotel App!</strong>
+            </h1>
+            <hr>
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <p class="text-faded mb-5">Start using our hotel application to find hotels in San Francisco.</p>
+            <div id="login" style="display: block;">
+              <a class="btn btn-primary btn-xl" href="" data-toggle="modal" data-target=".bd-example-modal-sm" onclick="setType('Login')"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+              <a class="btn btn-light btn-xl" href="" data-toggle="modal" data-target=".bd-example-modal-sm" onclick="setType('Register')"><i class="fa fa-download" aria-hidden="true"></i> Register</a>
+            </div>
+            <div id="start" style="display: none;">
+        	     <a class="btn btn-primary btn-xl" href="/hotel"><i class="fa fa-play" aria-hidden="true"></i>  Start</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="portfolio">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters popup-gallery">
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="frontend/img/hotelapp_hotel_list.png">
+              <img class="img-fluid" src="frontend/img/hotelapp_hotel_list.png" alt="photo 1">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-name">
+                    Hotel List
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="frontend/img/hotelapp_hotel_detail.png">
+              <img class="img-fluid" src="frontend/img/hotelapp_hotel_detail.png" alt="photo 2">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-name">
+                    Hotel Details
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="frontend/img/hotelapp_my_page.png">
+              <img class="img-fluid" src="frontend/img/hotelapp_my_page.png" alt="photo 3">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-name">
+                    User Dashboard
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="frontend/img/hotelapp_arrtaction.png">
+              <img class="img-fluid" src="frontend/img/hotelapp_arrtaction.png" alt="photo 4">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-name">
+                    Attraction Details
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="frontend/img/hotelapp_review.png">
+              <img class="img-fluid" src="frontend/img/hotelapp_review.png" alt="photo 5">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-name">
+                    User Review
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="frontend/img/hotelapp_about_this_app.png">
+              <img class="img-fluid" src="frontend/img/hotelapp_about_this_app.png" alt="photo 6">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-name">
+                    hotelApp
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">About hotelApp</h2>
+            <hr class="my-4">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-gift text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Free to Use</h3>
+              <p class="text-muted mb-0">As always, this app is free to use for any purpose!</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-user-plus text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">User Friendly</h3>
+              <p class="text-muted mb-0">Great User Experience. Easy to use.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Made with Love</h3>
+              <p class="text-muted mb-0">You have to make your websites with love these days!</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-github text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Open Source</h3>
+              <p class="text-muted mb-0">Click "<a href="https://github.com/brianisadog" target="_blank" style="color: #868e96;">here</a>" to access my GitHub.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="mySmallModalLabel"></h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <i class="fa fa-times fa-1" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="form-signin" action="/index" method="post">
+              <label for="username" class="sr-only">Username</label>
+              <input type="text" id="username" name="username" class="form-control" data-toggle="tooltip" data-placement="top" title="Only accept alphabet, digit, at, dash and underline." placeholder="Username" maxlength="30" onkeyup="usernameCheck()" required>
+              <span id="usernameBad" class="fa fa-times text-danger usernameBad"></span>
+              <span id="usernameGood" class="fa fa-check text-success usernameGood"></span>
+              <label for="password" class="sr-only">Password</label>
+              <input type="password" id="password" name="password" class="form-control" data-toggle="tooltip" data-placement="top" title="Should include at least 8 of uppercase, lowercase, digit and special character: !@#$%&*-_" placeholder="Password" maxlength="30" onkeyup="passwordCheck()" required>
+              <span id="passwordBad" class="fa fa-times text-danger passwordBad"></span>
+              <span id="passwordGood" class="fa fa-check text-success passwordGood"></span>
+              <span id="passwordSnippet" class="fa fa-eye passwordSnippet" onmousedown="snippet('text')" onmouseup="snippet('password')"></span>
+              <input type="hidden" id="type" name="type" value="">
+              <p style="padding-top: 10px;margin-bottom: -5px;"><input id="modalButton" type="Submit" class="btn-primary" value=""></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="frontend/vendor/jquery/jquery.min.js"></script>
+    <script src="frontend/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="frontend/js/sweetalert.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="frontend/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="frontend/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="frontend/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="frontend/js/creative.min.js"></script>
+    <script src="frontend/js/hotelApp.js"></script>
+
+  </body>
+
+</html>

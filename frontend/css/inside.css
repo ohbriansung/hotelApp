@@ -1,0 +1,188 @@
+body {
+	padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+	body {
+		padding-top: 56px;
+	}
+}
+
+.page-link {
+	cursor: pointer;
+}
+
+.list-group-item-action {
+	cursor: pointer;
+}
+
+tr {
+	cursor: pointer;
+}
+
+.clickable {
+	cursor: pointer;
+}
+
+.card-img {
+	height: 280px;
+	background-size: cover;
+	background-position: center;
+}
+
+.form-control-sm {
+	background-color: #FFF;
+	border: 1px solid #CED4DA;
+}
+
+.recommend {
+	float: right;
+	font-size: 24px;
+}
+
+.reviewContext {
+	background-color: rgba(0,0,0,.1);
+	border-radius: calc(.25rem - 1px);
+}
+
+.like {
+	width: 1em;
+	text-align: center;
+	color: #3385FF;
+}
+
+.like:hover {
+	color: #004085;
+}
+
+.button {
+	border-radius: .2rem;
+}
+
+.fa-star {
+	color: #FFC107;
+}
+
+.fa-star-o {
+	color: #FFC107;
+}
+
+.fa-star-half-o {
+	color: #FFC107;
+}
+
+.fa-smile-o {
+	color: #FF6A00;
+}
+
+.fa-frown-o {
+	color: #850075;
+}
+
+.fa-heart {
+	color: #FF3D7F;
+}
+
+.fa-thumbs-up {
+	color: #3385FF;
+}
+
+.fa-book {
+	color: #28A745;
+}
+
+.card-header {
+	height: 3em;
+}
+
+.card-footer {
+	height: 2em;
+}
+
+.table-fit {
+	padding: 0;
+}
+
+.table-fit table {
+	table-layout: fixed;
+	width: 100%;
+	margin: 0;
+}
+
+.table-fit table td {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.fa-trash-o {
+	float: right;
+	line-height: 1.5;
+}
+
+.showmore {
+	position: absolute;
+	width: 100%;
+	height: 2em;
+	bottom: 0;
+	left: 0;
+	border-radius: 0 0 .2rem .2rem;
+}
+
+.mypageCard {
+	width: 75%;
+	margin-left: 12.5%;
+}
+
+@media (max-width: 992px) {
+	.mypageCard {
+		position: relative;
+		width: 100%;
+		min-height: 1px;
+		padding-right: 15px;
+		padding-left: 15px;
+		-ms-flex: 0 0 100%;
+	        flex: 0 0 100%;
+	    max-width: 100%;
+	    margin-left: 0;
+	}
+}
+
+#googleMap, #googleMap2 {
+	width: 100%;
+	height: auto;
+	border-radius: calc(.25rem - 1px);
+}
+
+.clickableA {
+	color: #3385FF;
+	cursor: pointer;
+	text-decoration: underline;
+	text-decoration-color: #3385FF;
+}
+
+.clickableA:hover {
+	color: #286BCE;
+	text-decoration-color: #286BCE;
+}
+
+/*div.row {
+  margin: 0;
+}
+
+div.row > div[class^="col-"]:first-child {
+  padding-left: 0;
+}
+
+div.row > div[class^="col-"]:last-child {
+  padding-right: 0;
+}
+
+div.tableLabel label {
+  font-weight: normal;
+  text-align: left;
+  white-space: nowrap;
+}
+div.tableLabel select {
+  width: 75px;
+  display: inline-block;
+}*/

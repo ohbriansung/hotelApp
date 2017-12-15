@@ -1,0 +1,35 @@
+.passwordSnippet {
+    display:none;
+    right: 25px;
+    position: absolute;
+    top: 63px;
+    cursor:pointer;
+}
+
+.passwordBad {
+    display: none;
+    right: 45px;
+    position: absolute;
+    top: 63px;
+}
+
+.passwordGood {
+    display: none;
+    right: 45px;
+    position: absolute;
+    top: 63px;
+}
+
+.usernameBad {
+    display: none;
+    right: 25px;
+    position: absolute;
+    top: 27px;
+}
+
+.usernameGood {
+    display: none;
+    right: 25px;
+    position: absolute;
+    top: 27px;
+}

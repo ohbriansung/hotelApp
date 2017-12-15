@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Brian Sung">
+
+    <title>hotelApp - MyPage</title>
+
+    <link rel="icon" href="frontend/img/icon.png" type="image/png">
+
+    <!-- Bootstrap core CSS -->
+    <link href="frontend/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="frontend/css/sweetalert.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom fonts for this template -->
+    <link href="frontend/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="frontend/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="frontend/css/creative.css" rel="stylesheet" type="text/css">
+    <link href="frontend/css/inside.css" rel="stylesheet" type="text/css">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="subNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="/index"><i class="fa fa-h-square" aria-hidden="true"></i> hotelApp</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li id="navlogin1" style="display: list-item;" class="nav-item">
+              <a class="nav-link" href="" data-toggle="modal" data-target=".bd-example-modal-sm" onclick="setType('Login')"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+            </li>
+            <li id="navlogin2" style="display: list-item;" class="nav-item">
+              <a class="nav-link" href="" data-toggle="modal" data-target=".bd-example-modal-sm" onclick="setType('Register')"><i class="fa fa-download" aria-hidden="true"></i> Register</a>
+            </li>
+        <li id="navlogout1" style="display: none;" class="nav-item">
+              <a class="nav-link" href="/hotel"><i class="fa fa-home" aria-hidden="true"></i> Hotels</a>
+            </li>
+            <li id="navlogout2" style="display: none;" class="nav-item">
+              <a class="nav-link js-scroll-trigger active" href="#page-top"><i class="fa fa-user-circle-o" aria-hidden="true"></i> MyPage</a>
+            </li>
+            <li id="navlogout3" style="display: none;" class="nav-item">
+              <a class="nav-link" href="/index?logout"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card my-4">
+            <div class="card-header" style="text-align: center;height: auto;border: 0;">
+              <div class="row" id="loginInformation">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-3">
+          <div class="card mb-4">
+            <div class="card-header">
+              <i class="fa fa-book" aria-hidden="true"></i> My Reviews 
+              <i class="fa fa-trash-o clickable" style="right: 0;" onclick="clearAll('myReviews')"></i>
+            </div>
+            <div class="card-body table-responsive table-fit">
+              <table id="myReviews" class="table table-hover"></table>
+            </div>
+            <div id="myReviewsShow" class="card-footer text-muted" style="display: block;">
+              <button class="btn-primary clickable showmore" onclick="addResult('myReviews')">
+                <i class="fa fa-chevron-circle-down" aria-hidden="true"></i> Show More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="card mb-4">
+            <div class="card-header">
+              <i class="fa fa-heart" aria-hidden="true"></i> Favorite Hotels 
+              <i class="fa fa-trash-o clickable" onclick="clearAll('favoriteHotels')"></i>
+            </div>
+            <div class="card-body table-responsive table-fit">
+              <table id="favoriteHotels" class="table table-hover"></table>
+            </div>
+            <div id="favoriteHotelsShow" class="card-footer text-muted" style="display: block;">
+              <button class="btn-primary clickable showmore" onclick="addResult('favoriteHotels')">
+                <i class="fa fa-chevron-circle-down" aria-hidden="true"></i> Show More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="card mb-4">
+            <div class="card-header">
+              <i class="fa fa-thumbs-up" aria-hidden="true"></i> Liked Reviews 
+              <i class="fa fa-trash-o clickable" onclick="clearAll('likedReviews')"></i>
+            </div>
+            <div class="card-body table-responsive table-fit">
+              <table id="likedReviews" class="table table-hover"></table>
+            </div>
+            <div id="likedReviewsShow" class="card-footer text-muted" style="display: block;">
+              <button class="btn-primary clickable showmore" onclick="addResult('likedReviews')">
+                <i class="fa fa-chevron-circle-down" aria-hidden="true"></i> Show More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="card mb-4">
+            <div class="card-header">
+              <i class="fa fa-star" aria-hidden="true"></i> Expedia Links 
+              <i class="fa fa-trash-o clickable" onclick="clearAll('expediaLinks')"></i>
+            </div>
+            <div class="card-body table-responsive table-fit">
+              <table id="expediaLinks" class="table table-hover"></table>
+            </div>
+            <div id="expediaLinksShow" class="card-footer text-muted" style="display: block;">
+              <button class="btn-primary clickable showmore" onclick="addResult('expediaLinks')">
+                <i class="fa fa-chevron-circle-down" aria-hidden="true"></i> Show More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <input type="hidden" id="hotelId" value="">
+        <input type="hidden" id="reviewId" value="">
+        <input type="hidden" id="pageToken" value="mypage">
+      </div>
+
+      <div class="row">
+        <div id="detailDisplay" class="mypageCard"></div>
+      </div>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Put Review Modal -->
+    <div class="modal fade" id="reviewModal" tabindex="-1" role="dialog" aria-labelledby="reviewModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="reviewModalLabel"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div id="reviewModalContent"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Likes Detail Modal -->
+    <div class="modal fade" id="likeModal" tabindex="-1" role="dialog" aria-labelledby="likeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="likeModalLabel">Who liked this</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="likeModalBody"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Address Detail Modal -->
+    <div class="modal fade" id="addressModal" tabindex="-1" role="dialog" aria-labelledby="addressModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="addressModalLabel">View in Google Map</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="likeModalBody">
+            <img id="googleMap2" src="" alt="Google Map View">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="frontend/vendor/jquery/jquery.min.js"></script>
+    <script src="frontend/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="frontend/js/sweetalert.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="frontend/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="frontend/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="frontend/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="frontend/js/creative2.min.js"></script>
+    <script src="frontend/js/hotelApp.js"></script>
+
+  </body>
+
+</html>

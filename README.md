@@ -45,10 +45,6 @@ Try to get a quick and simple registration on my application by using the "hotel
 
 ## Documentation
 
-### Authors
-
-* **Brian Sung** - *Computer Science graduate student* - [LinkedIn](https://www.linkedin.com/in/brianisadog/)
-
 ### References
 * [University of San Francisco](https://www.usfca.edu/)
 * [AWS](https://aws.amazon.com/)
@@ -64,4 +60,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ### Acknowledgment
 
-Not using for any commercial purpose. 
+This is a course project, not using for any commercial purpose.
+
+### Author
+
+* **Brian Sung** - *Computer Science graduate student* - [LinkedIn](https://www.linkedin.com/in/brianisadog/)

@@ -40,7 +40,7 @@ Try to get a quick and simple registration on my application by using the "hotel
 
 * All frontend static files are in */frontend*, Java source files are in */src*.
 * Hotel information and review data is provided in */input*.
-* More detail please see Java document in */Java doc*.
+* More details please see Java document in *Java_Doc.zip*.
 * If you want to build this environment on your local divice, make sure to change parameters in */doc/database.properties* to connect with your local database.
 
 ## Documentation

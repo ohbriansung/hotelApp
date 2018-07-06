@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-:point_right: [hotelApp](http://hotelapp.us-east-2.elasticbeanstalk.com/index)
+:point_right: [hotelApp](http://206.189.215.73:5000/index)
 
 ### Introduction and How to use
 

@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-:point_right: [hotelApp](http://206.189.215.73:5000/index)
+:point_right: [hotelApp](http://brianxzone-hotelapp.ddns.net:5000/index)
 
 ### Introduction and How to use
 
@@ -64,4 +64,4 @@ This is a course project, not using for any commercial purpose.
 
 ### Author
 
-* **Brian Sung** - *Computer Science graduate student* - [LinkedIn](https://www.linkedin.com/in/brianisadog/)
+* **Brian Sung** - *Computer Science graduate student* - [LinkedIn](https://www.linkedin.com/in/ohbriansung/)

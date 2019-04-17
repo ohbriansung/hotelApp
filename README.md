@@ -40,7 +40,7 @@ Try to get a quick and simple registration on my application by using the "hotel
 * All frontend static files are in [frontend](https://github.com/ohbriansung/hotelApp/tree/master/frontend) folder, Java source code is in [src](https://github.com/ohbriansung/hotelApp/tree/master/src).
 * Hotel information and review data is provided in [input](https://github.com/ohbriansung/hotelApp/tree/master/input).
 * More details please see Java document in [Java_Doc.zip](https://github.com/ohbriansung/hotelApp/blob/master/Java_Doc.zip?raw=true).
-* If you want to build this environment on your local device, make sure to change parameters in []/doc/database.properties](https://github.com/ohbriansung/hotelApp/blob/master/doc/database.properties) to connect with your local database.
+* If you want to build this environment on your local device, make sure to change parameters in [/doc/database.properties](https://github.com/ohbriansung/hotelApp/blob/master/doc/database.properties) to connect with your local database.
 
 ## Author
 
@@ -48,7 +48,7 @@ Chien-Yu (Brian) Sung
 
 ## Acknowledgment
 
-This project is for academic purpose only.
+This project is for academic purposes only.
 
 ## Other References
 0. [University of San Francisco](https://www.usfca.edu/)
